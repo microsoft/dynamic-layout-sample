@@ -1,120 +1,119 @@
-dynamic-layout-sample
+Dynamic Layout Sample
 =====================
 
 A Nokia example application demonstrating how to create a dynamic layouts for different size of resolutions and physical screens on Windows Phone 8 platform.
 
 The application presents a number of items on the main page. Layout and size of the items depends on a style applied to the items, the style depending on the resolution of the device. A default style is always loaded and as it's name suggests, it defines a universal style suitable for presenting items in all supported resolutions. In devices with 1080p resolution an additional style is loaded at runtime. This 1080p style overrides some details of the default style, optimizing the layout for a large display with 1080p resolution.
 
-The example has been developed with Silverlight for Windows Phone devices and tested to work on Nokia Lumia devices with Windows Phone 8.
-
 This example application is hosted in GitHub:
 https://github.com/nokia-developer/dynamic-layout-sample
 
+Developed with Microsoft Visual Studio Express for Windows Phone 2012.
+Compatible with Windows Phone 8 devices. 
+Tested to work on Nokia Lumia 925 and Nokia Lumia 1520. 
 
-Project structure and implementation
-------------------------------------
 
-- Folders
+Instructions
+------------
+
+Make sure you have the following installed:
+
+ * Windows 8
+ * Windows Phone SDK 8.0
+ * NuGet Package Manager (https://nuget.org/), Visual Studio extension to install and update third-party libraries and tools in Visual Studio
+
+To build and run the sample:
+
+* Open the SLN file
+  * File > Open Project, select the file DynamicLayoutSample.sln
+* Install Silverlight Toolkit for the project.
+  * Right click References in Solution Explorer -> select Manage NuGet Packages
+  * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
+* Select the target 'Emulator WVGA' / 'Emulator 720P'. As there is no dedicated 1080P emulator available, the application uses 'Emulator 720P' to emulate 1080P resolution as they share the same aspect ratio.
+* Press F5 to build the project and run it on the Windows Phone Emulator.
+
+To deploy the sample on Windows Phone 8 device:
+* See the official documentation for deploying and testing applications on Windows Phone devices at http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
+
+
+About the implementation
+------------------------
+
+Important folders
 
 | Folder | Description |
 | ------ | ----------- |
 | The root folder | Contains the project file, the license information and this file (README.md) |
-| `DynamicLayoutSample` | Root folder for the implementation files.  |
-| `Assets` | Graphic assets like icons and tiles. |
-| `Properties` | Application property files. |
-| `Resources` | Application resources. |
-| `SampleData` | Sample model data. |
-| `Themes` | Different style definitions for rendering sample items.  |
+| DynamicLayoutSample | Root folder for the implementation files.  |
+| Assets | Graphic assets like icons and tiles. |
+| Properties | Application property files. |
+| Resources | Application resources. |
+| SampleData | Sample model data. |
+| Themes | Different style definitions for rendering sample items.  |
 
-- Important files and classes
+Important files
 
 | File | Description |
 | ---- | ----------- |
-| `SampleDataItemTemplate.xaml` | Defines the layout of a list item. |
-| `SampleDataItemStyleDefault.xaml` | Defines styles determining each element's look and feel. |
-| `SampleDataItemStyle1080p.xaml` | Redefines styles with 1080p optimized versions. |
-| `StyleSelector.cs` | Determines which styles are used at runtime. |
-| `ScreenSizeHelper.cs` | Determines the device's screen size at runtime. |
+| SampleDataItemTemplate.xaml | Defines the layout of a list item. |
+| SampleDataItemStyleDefault.xaml | Defines styles determining each element's look and feel. |
+| SampleDataItemStyle1080p.xaml | Redefines styles with 1080p optimized versions. |
+| StyleSelector.cs | Determines which styles are used at runtime. |
+| ScreenSizeHelper.cs | Determines the device's screen size at runtime. |
+
+Important classes
 
 | Class | Description |
 | ----- | ----------- |
-| `MainPage` | The UI of this example application. |
+| MainPage | The UI of this example application. |
+
+Additional information on adapting to 1080p resolution and large displays can be found from Nokia Lumia Developer's Library: http://developer.nokia.com/Resources/Library/Lumia/
 
 
-Compatibility
--------------
+Known issues
+------------
 
-* Windows Phone 8
-
-Tested to work on Nokia Lumia 925 and Nokia Lumia 1520. 
-Developed with Microsoft Visual Studio Express for Windows Phone 2012.
-
-
-Building, installing, and running the application
--------------------------------------------------
-
-Make sure you have the following installed:
- * Windows 8
- * Windows Phone SDK 8.0
- * NuGet 2.1 (https://nuget.org/), Visual Studio extension to install and 
-   update third-party libraries and tools in Visual Studio
-
-To run the sample:
-1. Open the SLN file
-  * File > Open Project, select the file DynamicLayoutSample.sln
-2. Install Silverlight Toolkit for the project.
-  * Right click References in Solution Explorer -> select Manage NuGet Packages
-  * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
-5. Select the target 'Emulator WVGA' / 'Emulator 720P'.
-6. Press F5 to build the project and run it on the Windows Phone Emulator.
-
-To deploy the sample on Windows Phone 8 device:
- * See the official documentation for deploying and testing applications on Windows Phone devices at http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
+No known issues.
 
 
 License
 -------
 
-Copyright © 2013 Nokia Corporation. All rights reserved.
-Nokia and Nokia Connecting People are registered trademarks of Nokia Corporation. 
-Other product and company names mentioned herein may be trademarks or trade names
-of their respective owners.
+    Copyright © 2013 Nokia Corporation. All rights reserved.
+    Nokia and Nokia Connecting People are registered trademarks of Nokia Corporation. 
+    Other product and company names mentioned herein may be trademarks or trade names
+    of their respective owners.
+      
+    Subject to the conditions below, you may, without charge:
+  
+    ·  Use, copy, modify and/or merge copies of this software and 
+       associated content and documentation files (the “Software”)
+  
+    ·  Publish, distribute, sub-licence and/or sell new software 
+       derived from or incorporating the Software.
+      
+    Some of the documentation, content and/or software maybe licensed under open source
+    software or other licenses. To the extent such documentation, content and/or software
+    are included, licenses and/or other terms and conditions shall apply in addition and/or
+    instead of this notice. The exact terms of the licenses, disclaimers, acknowledgements
+    and notices are reproduced in the materials provided.
+    
+    This file, unmodified, shall be included with all copies or substantial portions
+    of the Software that are distributed in source code form.
+    
+    The Software cannot constitute the primary value of any new software derived 
+    from or incorporating the Software.
+    
+    Any person dealing with the Software shall not misrepresent the source of the Software.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
 
-Subject to the conditions below, you may, without charge:
+Version history
+---------------
 
-·  Use, copy, modify and/or merge copies of this software and 
-   associated content and documentation files (the “Software”)
-
-·  Publish, distribute, sub-licence and/or sell new software 
-   derived from or incorporating the Software.
-
-Some of the documentation, content and/or software maybe licensed under open source
-software or other licenses. To the extent such documentation, content and/or software
-are included, licenses and/or other terms and conditions shall apply in addition and/or
-instead of this notice. The exact terms of the licenses, disclaimers, acknowledgements
-and notices are reproduced in the materials provided.
-
-This file, unmodified, shall be included with all copies or substantial portions
-of the Software that are distributed in source code form.
-
-The Software cannot constitute the primary value of any new software derived 
-from or incorporating the Software.
-
-Any person dealing with the Software shall not misrepresent the source of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
-PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-The license file is also available online at
-https://github.com/nokia-developer/dynamic-layout-sample/blob/master/Licence.txt
-
-
-Related documentation
----------------------
-
-Additional information on adapting to 1080p resolution and large displays can be found from Nokia Lumia Developer's Library: http://developer.nokia.com/Resources/Library/Lumia/
+* 1.0 First public release 
