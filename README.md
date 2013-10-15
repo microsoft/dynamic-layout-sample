@@ -9,8 +9,15 @@ This example application is hosted in GitHub:
 https://github.com/nokia-developer/dynamic-layout-sample
 
 Developed with Microsoft Visual Studio Express for Windows Phone 2012.
-Compatible with Windows Phone 8 devices. 
-Tested to work on Nokia Lumia 925 and Nokia Lumia 1520. 
+
+Compatible with:
+
+ * Windows Phone 8
+
+Tested to work on:
+
+ * Nokia Lumia 925
+ * Nokia Lumia 1520 
 
 
 Instructions
@@ -24,34 +31,34 @@ Make sure you have the following installed:
 
 To build and run the sample:
 
-* Open the SLN file
-  * File > Open Project, select the file DynamicLayoutSample.sln
-* Install Silverlight Toolkit for the project.
-  * Right click References in Solution Explorer -> select Manage NuGet Packages
-  * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
-* Select the target 'Emulator WVGA' / 'Emulator 720P'. As there is no dedicated 1080P emulator available, the application uses 'Emulator 720P' to emulate 1080P resolution as they share the same aspect ratio.
-* Press F5 to build the project and run it on the Windows Phone Emulator.
+ * Open the SLN file
+   * File > Open Project, select the file DynamicLayoutSample.sln
+ * Install Silverlight Toolkit for the project.
+   * Right click References in Solution Explorer -> select Manage NuGet Packages
+   * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
+ * Select the target 'Emulator WVGA' / 'Emulator 720P'. As there is no dedicated 1080P emulator available, the application uses 'Emulator 720P' to emulate 1080P resolution as they share the same aspect ratio.
+ * Press F5 to build the project and run it on the Windows Phone Emulator.
 
 To deploy the sample on Windows Phone 8 device:
-* See the official documentation for deploying and testing applications on Windows Phone devices at http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
+ * See the official documentation for deploying and testing applications on Windows Phone devices at http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
 
 
 About the implementation
 ------------------------
 
-Important folders
+Important folders:
 
 | Folder | Description |
 | ------ | ----------- |
-| The root folder | Contains the project file, the license information and this file (README.md) |
+| / | Contains the project file, the license information and this file (README.md) |
 | DynamicLayoutSample | Root folder for the implementation files.  |
-| Assets | Graphic assets like icons and tiles. |
-| Properties | Application property files. |
-| Resources | Application resources. |
-| SampleData | Sample model data. |
-| Themes | Different style definitions for rendering sample items.  |
+| DynamicLayoutSample/Assets | Graphic assets like icons and tiles. |
+| DynamicLayoutSample/Properties | Application property files. |
+| DynamicLayoutSample/Resources | Application resources. |
+| DynamicLayoutSample/SampleData | Sample model data. |
+| DynamicLayoutSample/Themes | Different style definitions for rendering sample items.  |
 
-Important files
+Important files:
 
 | File | Description |
 | ---- | ----------- |
@@ -61,7 +68,7 @@ Important files
 | StyleSelector.cs | Determines which styles are used at runtime. |
 | ScreenSizeHelper.cs | Determines the device's screen size at runtime. |
 
-Important classes
+Important classes:
 
 | Class | Description |
 | ----- | ----------- |
@@ -79,17 +86,17 @@ No known issues.
 License
 -------
 
-    Copyright © 2013 Nokia Corporation. All rights reserved.
+    Copyright ¬© 2013 Nokia Corporation. All rights reserved.
     Nokia and Nokia Connecting People are registered trademarks of Nokia Corporation. 
     Other product and company names mentioned herein may be trademarks or trade names
     of their respective owners.
       
     Subject to the conditions below, you may, without charge:
   
-    ∑  Use, copy, modify and/or merge copies of this software and 
-       associated content and documentation files (the ìSoftwareî)
+    ¬∑  Use, copy, modify and/or merge copies of this software and 
+       associated content and documentation files (the ‚ÄúSoftware‚Äù)
   
-    ∑  Publish, distribute, sub-licence and/or sell new software 
+    ¬∑  Publish, distribute, sub-licence and/or sell new software 
        derived from or incorporating the Software.
       
     Some of the documentation, content and/or software maybe licensed under open source
@@ -116,4 +123,4 @@ License
 Version history
 ---------------
 
-* 1.0 First public release 
+ * 1.0 First public release 
