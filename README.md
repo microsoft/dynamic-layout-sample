@@ -33,7 +33,7 @@ To build and run the sample:
 
  * Open the SLN file
    * File > Open Project, select the file DynamicLayoutSample.sln
- * Install Silverlight Toolkit for the project.
+ * Install Windows Phone Toolkit for the project.
    * Right click References in Solution Explorer -> select Manage NuGet Packages
    * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
  * Select the target 'Emulator WVGA' / 'Emulator 720P'. As there is no dedicated 1080P emulator available, the application uses 'Emulator 720P' to emulate 1080P resolution as they share the same aspect ratio.
