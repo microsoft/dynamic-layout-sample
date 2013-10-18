@@ -17,6 +17,9 @@ using System.Windows;
 
 namespace DynamicLayoutSample
 {
+    /// <summary>
+    /// Helper class for determining the screen specifications of the device.
+    /// </summary>
     class ScreenSizeHelper
     {
         static private double _screenSize = -1.0f;
@@ -28,7 +31,7 @@ namespace DynamicLayoutSample
         {
             get
             {
-                // use WVGA emulator to simulate small screen and 720p emulator to simulate big screen
+                // Use WVGA emulator to simulate small screen and 720p emulator to simulate big screen
                 if (Microsoft.Devices.Environment.DeviceType == Microsoft.Devices.DeviceType.Emulator)
                 {
                     _screenSize = (App.Current.Host.Content.ScaleFactor == 150) ? 6.0f : 0.0f;

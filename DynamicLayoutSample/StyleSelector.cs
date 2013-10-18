@@ -11,11 +11,15 @@ using System.Windows;
 
 namespace DynamicLayoutSample
 {
+    /// <summary>
+    /// Helper class for setting the style (UI component, font sizes etc.)
+    /// based on the device specifications.
+    /// </summary>
     class StyleSelector
     {
         static public void SetStyle()
         {
-            if(ScreenSizeHelper.IsBigScreen)
+            if (ScreenSizeHelper.IsBigScreen)
             {
                 var appTheme = new ResourceDictionary {
                     Source = new Uri("/DynamicLayoutSample;component/Themes/SampleDataItemStyle1080p.xaml", UriKind.Relative)
