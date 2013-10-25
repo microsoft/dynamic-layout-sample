@@ -8,6 +8,9 @@ The application presents a number of items on the main page. Layout and size of 
 This example application is hosted in GitHub:
 https://github.com/nokia-developer/dynamic-layout-sample
 
+For more information on implementation, visit Nokia Lumia Developer's Library:
+http://developer.nokia.com/Resources/Library/Lumia/#!code-examples/dynamic-layout-sample.html
+
 Developed with Microsoft Visual Studio Express for Windows Phone 2012.
 
 Compatible with:
