@@ -1,14 +1,21 @@
 Dynamic Layout Sample
 =====================
 
-A Nokia example application demonstrating how to create a dynamic layouts for different size of resolutions and physical screens on Windows Phone 8 platform.
+An example application demonstrating how to create a dynamic layouts for
+different size of resolutions and physical screens on Windows Phone 8 platform.
 
-The application presents a number of items on the main page. Layout and size of the items depends on a style applied to the items, the style depending on the resolution of the device. A default style is always loaded and as it's name suggests, it defines a universal style suitable for presenting items in all supported resolutions. In devices with 1080p resolution an additional style is loaded at runtime. This 1080p style overrides some details of the default style, optimizing the layout for a large display with 1080p resolution.
+The application presents a number of items on the main page. Layout and size of
+the items depends on a style applied to the items, the style depending on the
+resolution of the device. A default style is always loaded and as it's name
+suggests, it defines a universal style suitable for presenting items in all
+supported resolutions. In devices with 1080p resolution an additional style is
+loaded at runtime. This 1080p style overrides some details of the default style,
+optimizing the layout for a large display with 1080p resolution.
 
 This example application is hosted in GitHub:
-https://github.com/nokia-developer/dynamic-layout-sample
+https://github.com/Microsoft/dynamic-layout-sample
 
-Additional documentation available at Nokia Lumia Developer's Library:
+Additional documentation available at Lumia Developer's Library:
 http://developer.nokia.com/Resources/Library/Lumia/#!code-examples/dynamic-layout-sample.html
 
 Developed with Microsoft Visual Studio Express for Windows Phone 2012.
